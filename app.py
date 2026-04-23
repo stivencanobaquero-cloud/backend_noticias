@@ -9,10 +9,10 @@ CORS(app)
 def obtener_noticias():
     url = 'https://newsapi.org/v2/everything'
     params = {
-        'q': 'Colombia OR Meta OR Villavicencio',
+        'q': 'Colombia',
         'language': 'es',
         'sortBy': 'publishedAt',
-        'apiKey': 'TU_API_KEY_REAL'
+        'apiKey': 'ddd3a8123a8648a9a6a1bb13009c68ee'  # tu clave real aquí
     }
     r = requests.get(url, params=params)
     return jsonify(r.json())
